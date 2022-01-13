@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -23,6 +30,7 @@
         <div class="option">
           <label for="length">Password length:</label>
           <select name="length" id="length">
+            <option disabled class="option-label">Weak</option>
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
@@ -33,6 +41,8 @@
             <option value="14">14</option>
             <option value="15">15</option>
             <option value="16">16</option>
+            <option disabled class="option-label">Strong</option>
+
             <option value="17" selected>17</option>
             <option value="18">18</option>
             <option value="19">19</option>
@@ -89,14 +99,14 @@
               id="uppercase"
           /></label>
         </div>
-        <div class="option">
+        <div class="option generate-box">
           <p></p>
-          <button id="generate">Generate Password</button>
+          <button id="generate" class="btn">Generate Password</button>
         </div>
 
-        <div class="option">
+        <div class="option result-box">
           <label for="result">Your New Password:</label>
-          <input name="result" value="" id="result" />
+          <input name="result" value="" id="result" class="result" />
         </div>
       </main>
     </div>
