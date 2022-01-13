@@ -9,6 +9,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Secure Password Generator</h1>
+    </header>
+    <main>
+      <div class="option">
+        <label for="length">Password length:</label>
+        <select name="length">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+      <div class="option">
+        <label for="symbols">Include Symbols:</label>
+        <label
+          ><input name="symbols" type="checkbox" value="symbols" />( e.g. @#$%
+          )</label
+        >
+      </div>
+
+      <div class="option">
+        <label for="numbers">Include Numbers:</label>
+        <label
+          ><input name="numbers" type="checkbox" value="numbers" />( e.g. 123456
+          )</label
+        >
+      </div>
+
+      <div class="option">
+        <label for="lowecase">Include Lowercase Characters:</label>
+        <label
+          ><input name="lowercase" type="checkbox" value="lowercase" />( e.g.
+          abcdefgh )</label
+        >
+      </div>
+
+      <div class="option">
+        <label for="uppercase">Include Uppercase Characters:</label>
+        <label
+          ><input name="uppercase" type="checkbox" value="uppercase" />( e.g.
+          ABCDEFGH )</label
+        >
+      </div>
+
+      <button id="generate">Generate Password</button>
+
+      <div class="result">
+        <label for="result">Your New Password:</label>
+        <input name="result" value="" />
+      </div>
+    </main>
     <!-- JS -->
     <script src="app.js"></script>
   </body>
