@@ -58,7 +58,8 @@ generate.addEventListener("click", () => {
     }
 
     result.value = password.join("");
-    console.log(password.join(""));
+
+    // Resetting arrays for next run
     password = [];
     functionsList = [];
   } else {
