@@ -62,6 +62,6 @@ generate.addEventListener("click", () => {
     password = [];
     functionsList = [];
   } else {
-    console.log("Please select atleast on attribute.");
+    console.log("Please select atleast one password attribute.");
   }
 });
