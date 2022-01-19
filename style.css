@@ -17,6 +17,10 @@ body {
   background-color: #a6a2a2;
   padding: 2rem;
   border-radius: 10px;
+
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
 }
 
 header {
