@@ -67,3 +67,9 @@ select {
 .generate-box {
   padding-top: 1rem;
 }
+
+.copied {
+  background: none;
+  color: #2f9e44;
+  font-weight: bold;
+}

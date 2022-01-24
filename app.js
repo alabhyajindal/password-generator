@@ -5,6 +5,7 @@ const lowercase = document.getElementById("lowercase");
 const uppercase = document.getElementById("uppercase");
 const generate = document.getElementById("generate");
 const result = document.getElementById("result");
+const copy = document.getElementById("copy");
 
 let length = document.getElementById("length");
 let char = 0;
@@ -116,7 +117,19 @@ generate.addEventListener("click", () => {
     // Resetting arrays for next run
     password = [];
     functionsList = [];
+    // Resetting the style of copy button
+    copy.classList.remove("copied");
+    copy.innerText = "Copy";
   } else {
     console.log("Please select atleast one password attribute.");
   }
+});
+
+copy.addEventListener("click", () => {
+  if (result.value != "") {
+    copy.innerText = "Copied!";
+    copy.classList.add("copied");
+    navigator.clipboard.writeText(result.value);
+  }
+  navigator.clipboard.writeText(result.value);
 });
